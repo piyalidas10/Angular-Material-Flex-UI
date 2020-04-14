@@ -1,0 +1,30 @@
+<mat-list>
+    <div fxFlexLayout="row" class="profile">
+        <div fxFlex="15" fxFlexAlign="center">
+            <mat-icon aria-hidden="false" aria-label="Profile" class="profile-pic">image</mat-icon>
+        </div>
+        <div fxFlex fxLayoutAlign="left center">
+            <p>Piyali Das</p>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div  *ngFor="let menu of menus">
+    <a href="javascript:void(0);" mat-list-item class="menu-list-item" [ngClass]="{'disabled': menu.disabled === true}" (click)="onItemSelected(menu)">
+        <mat-icon class="routeIcon" aria-hidden="false" aria-label="{{menu.name}}">{{menu.icon}}</mat-icon>
+        {{menu.name}}
+        <span fxFlex *ngIf="menu.children && menu.children.length">
+            <span fxFlex></span>
+            <mat-icon [@indicatorRotate]="expanded ? 'expanded': 'collapsed'">
+                <span *ngIf="expanded">keyboard_arrow_up</span>
+                <span *ngIf="!expanded">keyboard_arrow_down</span>
+            </mat-icon>
+        </span>
+    </a>
+            <mat-list *ngIf="expanded">
+                    <a href="javascript:void(0);" *ngFor="let childmenu of menu.children" mat-list-item class="menu-list-item" [ngClass]="{'disabled': childmenu.disabled === true}" (click)="onItemSelected(childmenu)">
+                            <mat-icon class="routeIcon" aria-hidden="false" aria-label="{{childmenu.name}}">{{childmenu.icon}}</mat-icon>
+                            {{childmenu.name}}
+                    </a>        
+            </mat-list>
+        </div>
+   </mat-list>

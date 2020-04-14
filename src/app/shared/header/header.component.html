@@ -1,0 +1,18 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="fix-header">
+<mat-toolbar fxLayout="row">
+    <div fxFlex="20">
+      <button mat-icon-button class="mat-icon-big" (click)="sidenavSrv.openNav()">
+          <mat-icon aria-hidden="false" aria-label="Menu">menu</mat-icon>
+      </button>
+    </div>
+    <div fxFlex="60" fxLayoutAlign="center center">
+      <h2>{{title}}</h2>
+    </div>
+    <div fxFlex="20" fxLayoutAlign="end">
+      <button mat-icon-button  class="mat-icon-big">
+        <mat-icon aria-hidden="false" aria-label="Message" matBadge="15" matBadgeColor="warn">message</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+      
+</div>

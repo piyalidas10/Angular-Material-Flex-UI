@@ -1,27 +1,46 @@
-# MaterialFlexProject1
+# MaterialFlexProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-## Development server
+# Tutorials
+https://alligator.io/angular/flex-layout/
+https://github.com/angular/material
+https://www.angularjswiki.com/flexlayout/
+https://codinglatte.com/posts/angular/angular-flex-layout-introduction/
+https://codinglatte.com/posts/angular/angular-flex-layout-introduction/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+https://medium.com/ng-gotchas/easily-create-the-legacy-angular-apps-v2-v4-v5-v6-ee4a22d7eb60
+https://tudip.com/blog-post/how-to-install-angular-material/
+https://material.angular.io/guide/getting-started
+https://medium.com/@armno/creating-a-custom-material-module-in-angular-ee6a5e925d30
+https://www.youtube.com/watch?v=hVdHLrKShh8
+https://github.com/angular/flex-layout
+https://tburleson-layouts-demos.firebaseapp.com/#/docs
 
-## Code scaffolding
+https://www.youtube.com/watch?v=jUfEn032IL8
+https://material.angular.io/components
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://stackblitz.com/github/jbojcic1/angular-routing-example/tree/routing-reuse-layout-example-1?file=src%2Fapp%2Fapp.module.ts
+https://stackblitz.com/angular/ndxjkvdodal?file=src%2Fapp%2Fsidenav-responsive-example.ts
+https://stackoverflow.com/questions/53357636/controling-the-angular-material-mat-drawer-from-another-component
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+# Installation Process
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ npx -p @angular/cli@latest ng new material-flex-project --style=scss
+ ng add @angular/material
+ ng add @angular/flex-layout
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Mat Icons
 
-## Further help
+https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/#mat-icon-list-category-notification
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Mat Sidebar Nav
+https://stackblitz.com/edit/dynamic-nested-sidenav-menu?file=app%2Fnav.service.ts
+
+
+# Mat theme colors
+
+These colors are 'primary', 'accent', or 'warn'.

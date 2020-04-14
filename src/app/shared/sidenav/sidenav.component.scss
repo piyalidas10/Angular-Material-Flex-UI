@@ -1,0 +1,26 @@
+.menu-list-item {
+    padding: 8px 0;
+    display: flex;
+    width: auto;
+    text-decoration: none;
+    .routeIcon {
+      margin-right: 40px;
+    }
+  }
+  mat-list{
+    mat-list{
+      padding-left: 20px;
+    }
+  }
+  @mixin mat-icon-size($size: 24px) {
+    font-size: $size;
+    height: $size;
+    width: $size;
+    line-height: $size;
+}
+  .profile{
+    padding-left: 15px;
+    .profile-pic{
+      @include mat-icon-size(45px);
+    }
+  }

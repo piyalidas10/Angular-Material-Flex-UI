@@ -1,0 +1,27 @@
+<mat-card>
+        <mat-card-title>Angular Material Flexlayout Form</mat-card-title>
+        <mat-card-content>
+                <div fxLayout>
+                    <form fxFlex="60" fxFlexOffset="20" fxFlexOffset.xs="0">
+                        <mat-form-field>
+                            <mat-label>Person Name</mat-label>
+                            <input matInput />
+                        </mat-form-field>
+                        <mat-form-field appearance="fill">
+                                <mat-label>Both a label and a placeholder</mat-label>
+                                <input matInput placeholder="Simple placeholder">
+                              </mat-form-field>
+                        <div>
+                                <mat-label>Gender</mat-label>
+                                <mat-radio-group [formControl]="floatLabelControl">
+                                        <mat-radio-button value="male">Male</mat-radio-button>
+                                        <mat-radio-button value="female">Female</mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                        <mat-form-field>
+                                <mat-checkbox [formControl]="hideRequiredControl">Check terms & conditions policy</mat-checkbox>
+                        </mat-form-field>
+                    </form>
+                </div>      
+        </mat-card-content>
+</mat-card>    

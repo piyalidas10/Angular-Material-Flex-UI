@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; background: #DDDDDD;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.block{
+    min-width: 75px;
+    min-height: 50px;
+}
+mat-card{
+    margin-bottom: 20px;
+}
+.mat-drawer-container{
+    background: transparent;
+}
+.box{
+    background: #FFFFFF;
+    // border: #999999 1px solid;
+    // margin-bottom: 20px;
+}
+.box div, .one, .one div{
+    min-height: 100px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.box div:nth-child(1), .one:nth-child(1) div{
+    background-color: #081b19;
+}
+.box div:nth-child(2), .one:nth-child(2) div{
+    background-color: #3949ab;
+}
+.box div:nth-child(3), .one:nth-child(3) div{
+    background-color: #9c27b0;
+}
+.box div:nth-child(4), .one:nth-child(4) div{
+    background-color: #c9954e;
+}
+.box div:nth-child(5), .one:nth-child(5) div{
+    background-color: #03a9f4;
+}
+.box div:nth-child(6), .one:nth-child(6) div{
+    background-color: #ff5722;
+}
+.box div:nth-child(7), .one:nth-child(7) div{
+    background-color: #8bc34a;
+}
+.fix-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    mat-toolbar{
+        background: #FFFFFF;
+    }
+}
+.nav-footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background: #FFFFFF;
+    box-shadow: 0 -1px 1px rgba(0,0,0,0.3);
+        padding: 0;
+        height: auto;
+}
+.container{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.mat-sidenav{
+    width: 360px;
+}
+@mixin mat-icon-size($size: 24px) {
+    font-size: $size;
+    height: $size;
+    width: $size;
+    line-height: $size;
+}
+.mat-icon-button.mat-icon-big{
+    .mat-icon{
+        @include mat-icon-size(32px);
+    }
+}

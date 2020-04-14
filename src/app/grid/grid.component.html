@@ -1,0 +1,146 @@
+<mat-card>
+  <mat-card-title></mat-card-title>
+  <mat-card-content>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center none" fxLayoutGap="30px" class="box">
+      <div class="block" fxFlex="10" fxLayoutGap="30px">
+        <p>This is an online version of the Manning book Angular Development with Typescript, Second Edition. With liveBook
+          you can access Manning books in-browser — anytime, anywhere.</p>
+      </div>
+      <div fxFlex="70" fxFlexAlign="end">
+            fxFlexAlign="end"
+      </div>
+      <div class="block" fxFlex="70" fxFlexAlign="stretch" fxLayoutAlign="center center">fxFlexAlign="stretch"</div>
+      <div class="block" fxFlex="50" fxFlexAlign="start" fxLayoutAlign="center center">fxFlexAlign="start"</div>
+      <div class="block" fxFlex="150" fxFlexAlign="auto" fxLayoutAlign="center center">fxFlexAlign="auto"</div>
+      <div class="block" fxFlex="100" fxFlexAlign="center" fxLayoutAlign="center center">fxFlexAlign="center"</div>
+      <div class="block" fxFlex="30" fxLayoutAlign="center center"></div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Layout Fill</mat-card-title>
+  <mat-card-subtitle>Using 'fxFill' to fill available width and height of parent container.</mat-card-subtitle>
+  <mat-card-content>
+    <div fxFill fxLayout="row" class="box">
+      <div class="block" fxFlex="20" fxLayoutAlign="center center">fxFlex="20"</div>
+      <div class="block" fxFlex="70" fxLayoutAlign="center center">fxFlex="70"</div>
+      <div class="block" fxFlex="30" fxLayoutAlign="center center">fxFlex="30"</div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Layout Gap</mat-card-title>
+  <mat-card-subtitle>Using 'fxLayoutGap' to create a grid-like layout</mat-card-subtitle>
+  <mat-card-content>
+    <div fxFlexFill fxLayout="row gap" fxLayoutGap="10px grid">
+      <div class="one" fxFlex="25">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="25"</div>
+      </div>
+      <div class="one" fxFlex="75">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="75"</div>
+      </div>
+      <div class="one" fxFlex="15">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="15"</div>
+      </div>
+      <div class="one" fxFlex="55">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="55"</div>
+      </div>
+      <div class="one" fxFlex="25">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="25"</div>
+      </div>
+      <div class="one" fxFlex="65">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="65"</div>
+      </div>
+      <div class="one" fxFlex="35">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="35"</div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Without Layout Gap</mat-card-title>
+  <mat-card-subtitle>Using 'fxFlexFill' to fill available width and height of parent container.</mat-card-subtitle>
+  <mat-card-content>
+    <div fxFlexFill fxLayout="row">
+      <div class="one" fxFlex="15">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="15"</div>
+      </div>
+      <div class="one" fxFlex="40">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="40"</div>
+      </div>
+      <div class="one" fxFlex="60">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="60"</div>
+      </div>
+      <div class="one" fxFlex="25">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="25"</div>
+      </div>
+      <div class="one" fxFlex="20">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="20"</div>
+      </div>
+      <div class="one" fxFlex="23">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="23"</div>
+      </div>
+      <div class="one" fxFlex="25">
+        <div fxFlexFill fxLayoutAlign="center center">fxFlex="25"</div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>'Flex' with Layout-Wrap</mat-card-title>
+  <mat-card-subtitle>Using "layout-wrap" to wrap positioned items within a layout container</mat-card-subtitle>
+  <mat-card-content>
+    <div fxLayout="row wrap" class="box">
+      <div fxFlex="35" fxLayoutAlign="center center">fxFlex="35"</div>
+      <div fxFlex="13" fxLayoutAlign="center center">fxFlex="13"</div>
+      <div fxFlex="75" fxLayoutAlign="center center">fxFlex="75"</div>
+      <div fxFlex="25" fxLayoutAlign="center center">fxFlex="25"</div>
+      <div fxFlex="15" fxLayoutAlign="center center">fxFlex="15"</div>
+      <div fxFlex="55" fxLayoutAlign="center center">fxFlex="55"</div>
+      <div fxFlex="25" fxLayoutAlign="center center">fxFlex="25"</div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+        <mat-card-title>Flex Attribute Values</mat-card-title>
+        <mat-card-subtitle>Explore impact of non-numerical values for the 'fxFlex' API:</mat-card-subtitle>
+        <mat-card-content>
+          <div fxLayout="row wrap" class="box">
+            <div fxFlex="none" fxLayoutAlign="center center">fxFlex="none"</div>
+            <div fxFlex fxLayoutAlign="center center">fxFlex</div>
+            <div fxFlex="nogrow" fxLayoutAlign="center center">fxFlex="nogrow"</div>
+            <div fxFlex="grow" fxLayoutAlign="center center">fxFlex="grow"</div>
+            <div fxFlex="initial" fxLayoutAlign="center center">fxFlex="initial"</div>
+            <div fxFlex="auto" fxLayoutAlign="center center">fxFlex="auto"</div>
+            <div fxFlex="noshrink" fxLayoutAlign="center center">fxFlex="noshrink"</div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+<mat-card>
+  <mat-card-title>Flex Layout Gap without width declaration of one div</mat-card-title>
+  <mat-card-subtitle>Item 3 div width is not declared</mat-card-subtitle>
+  <mat-card-content>
+    <div class="box" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+      <div fxFlex="15%" fxLayoutAlign="center center">Item 1 (15%)</div>
+      <div fxFlex="20%" fxFlexOrder="3" fxLayoutAlign="center center">Item 2 (20%)</div>
+      <div fxFlex fxLayoutAlign="center center">Item 3</div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Flex Offset Values</mat-card-title>
+  <mat-card-subtitle>Explore impact of values for the 'flex-offset' API:</mat-card-subtitle>
+  <mat-card-content>
+    <div class="box" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
+      <div fxFlex fxLayoutAlign="center center" fxFlexOffset="50px" fxFlexOffset.xs="0">Item 4</div>
+      <div fxFlex="200px" fxLayoutAlign="center center">Item 5</div>
+    </div>
+  </mat-card-content>
+</mat-card>
